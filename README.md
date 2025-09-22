@@ -55,7 +55,7 @@ ___
 
 ![AWS](https://img.shields.io/badge/AWS-Cloud%20Practitioner-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![OCI](https://img.shields.io/badge/Oracle%20Cloud-Foundations-F80000?style=for-the-badge&logo=oracle&logoColor=white)
-![Security+](https://img.shields.io/badge/CompTIA-Security%2B-EA1D25?style=for-the-badge&logo=comptia&logoColor=white)
+![Security+](https://img.shields.io/badge/CompTIA-Security%2B-EA1D25?style=for-the-badge&logo=comptia&logoColor=white)-gray?style=for-the-badge&logo=comptia&logoColor=white)](https://www.credly.com/users/steven-bennett.d5a92816/badges#credly)
 
 ---
 
