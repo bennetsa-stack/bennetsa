@@ -52,11 +52,7 @@
 
 ---
 
-## 📝 Latest Blog Posts
-<!-- BLOG-POST-LIST:START -->
-- Coming soon…
-<!-- BLOG-POST-LIST:END -->
+## 📫 Connect With Me
+- 💼 [LinkedIn](https://linkedin.com/in/austinbennett08)   
+- 📧 Email: bennetsa@gmail.com 
 
----
-
-## 📫 C
