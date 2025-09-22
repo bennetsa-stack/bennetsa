@@ -1,0 +1,15 @@
+name: Update README with activity
+
+on:
+  schedule:
+    - cron: '0 * * * *'   # runs hourly
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: JamesIves/github-activity-readme@v0.4.1
+        with:
+          COMMIT_MSG: "chore: updated README with recent activity"
