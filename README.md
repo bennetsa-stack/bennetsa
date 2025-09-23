@@ -44,8 +44,11 @@
 ---
 
 ## 📚 Currently Learning
-<!--START_SECTION:learning-->
-<!--END_SECTION:learning-->
+
+- AWS Solutions Architect (in progress)
+- Oracle Cloud Infrastructure Generative AI Professional
+- CompTIA Security+ (studying)
+- GitHub Foundations
 
 ___
 ## 🏅 Certifications & Learning
