@@ -45,9 +45,6 @@
 
 ## 📚 Currently Learning
 <!--START_SECTION:learning-->
-- AWS Solution Architect - Associtate (In Progress) 
-- Oracle Cloud Infrastructure Generative AI Professional (In Progress) 
-- CompTIA Security+ (in progress)  
 <!--END_SECTION:learning-->
 
 ___
