@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: JamesIves/github-activity-readme@v0.4.1
+      - uses: jamesgeorge007/github-activity-readme@master
         with:
-          COMMIT_MSG: "chore: updated README with recent activity"
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
