@@ -17,19 +17,26 @@ jobs:
         run: |
           set -e
           python3 - <<'PY'
-          import re, sys
+          import re, sys, os
+
+          print("DEBUG: Current diretory contents:", os.listdir())
+          
           try:
               with open('learning.md', 'r', encoding='utf-8') as f:
                   content = f.read().rstrip()
           except FileNotFoundError:
               print('learning.md not found', file=sys.stderr)
               sys.exit(1)
+              
           try:
               with open('README.md', 'r', encoding='utf-8') as f:
                   readme = f.read()
           except FileNotFoundError:
               print('README.md not found; creating one', file=sys.stderr)
               readme = ''
+
+          print("DEBUG: Successfully read both files")
+          
           start = '<!--START_SECTION:learning-->'
           end = '<!--END_SECTION:learning-->'
           replacement = f"{start}\n{content}\n{end}"
