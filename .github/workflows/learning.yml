@@ -9,14 +9,21 @@ jobs:
   update-learning:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
-      - name: Update Learning
-        uses: andymatuschak/auto-insert-text@v1
+      - name: Read learning.md
+        id: learning
+        run: |
+          echo "CONTENT<<EOF" >> $GITHUB_ENV
+          cat learning.md >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
+
+      - name: Replace Learning Section in README
+        uses: peter-evans/replace-text@v2
         with:
-          file: README.md
-          marker: "<!--START_SECTION:learning-->,<!--END_SECTION:learning-->"
-          content-file: learning.md
+          files: README.md
+          placeholder: '<!--START_SECTION:learning-->[\s\S]*<!--END_SECTION:learning-->'
+          replacement: '<!--START_SECTION:learning-->\n${{ env.CONTENT }}\n<!--END_SECTION:learning-->'
 
       - name: Commit changes
         run: |
