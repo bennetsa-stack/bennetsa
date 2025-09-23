@@ -10,12 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+
       - name: Update Learning
         uses: andymatuschak/auto-insert-text@v1
         with:
           file: README.md
-          marker: "<!--START_SECTION:learning-->","<!--END_SECTION:learning-->"
+          marker: "<!--START_SECTION:learning-->,<!--END_SECTION:learning-->"
           content-file: learning.md
+
       - name: Commit changes
         run: |
           git config --global user.name 'github-actions'
